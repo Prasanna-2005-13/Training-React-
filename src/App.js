@@ -188,23 +188,65 @@ export default class App extends stateexample {
 
 
 // !props children
-import React from 'react'
-import PropChildEx from './propsex/PropChildEx'
-import SubChild from './propsex/SubChild'
-import Child1 from './propsex/Child1'
+//import React from 'react'
+//import PropChildEx from './propsex/PropChildEx'
+//import SubChild from './propsex/SubChild'
+//import Child1 from './propsex/Child1'
 
-const App = () => {
+//const App = () => {
+  //return (
+    //<div>
+    //app
+      //{/* <PropChildEx num={1000}>
+        //<h1>this is data coming from props children</h1>
+        //<SubChild/>
+      //</PropChildEx> */}
+     // <Child1 university="Mallareddy university"/>
+    //</div>
+  //)
+//}
+
+//import React, { Component } from 'react'
+//import ClassComponent from './components/ClassComponent'
+//export default class App extends Component {
+  //render() {
+    //return (
+      //<div class name='App' {
+       
+      //}>
+        
+      //</div>
+    //)
+  //}
+//}
+
+
+
+//import './App.css';
+//import MyForm from './components/MyForm'
+//function App() {
+  //return (
+    //<div className="App">
+     //<MyForm></MyForm>
+     //</div>
+  //);
+//}
+
+//export default App;
+
+import React from 'react';
+import UseEffectEx from './hooksexamples/UseEffectEx'
+
+function App() {
   return (
-    <div>
-    app
-      {/* <PropChildEx num={1000}>
-        <h1>this is data coming from props children</h1>
-        <SubChild/>
-      </PropChildEx> */}
-      <Child1 university="Mallareddy university"/>
-    </div>
-  )
+    <div className="App">
+     
+      <UseEffectEx/>   </div>
+  );
 }
+
+export default App;
+
 
 
 

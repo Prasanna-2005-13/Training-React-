@@ -1,5 +1,5 @@
 single page application will happen in one tab (no reload and refresh)
-multi page application will hapen in many tabs(reload and refresh is possible)
+multi page application will happen in many tabs(reload and refresh is possible)
 
 - React is mainly useful to create a single page applications.
 
@@ -9,9 +9,6 @@ what is virtal DOM?
 - The updation of real dom with virtual DOM.
 
 - the entire process of updating the realDom with the help 
-
-
-JSX:-
 
 JSX:-
 *****
@@ -108,29 +105,44 @@ component omposition:-
 **********************
 - component composition is used to combine multiple components into single application.
 
-
 Props:-
 *******
 - props is nothing but a properties similar to html attributes.
 - props is an object.
+- props is immutable object.
 - props is an object used to exchange information/data from parent component to child component.
 
 
-props.children:-
+props.children:-it is a special type of prop used to pass the data / components as a prop to another component.
 
-props drilling:-
-
-
+props drilling:- it is used to pass the data down to child compoennt.
 
 
+state:-
+*******
+- state is an mutabel object which is used to store / isolate the data inside the component.
+
+class component:-
+*****************
+- class component is having the state object by default.
+
+syntax :- constructor(){
+        super();
+        this.state={
+            users:["Vamshi" , "579" , "Vaishali" , "Chethan" , "Ranjith"],
+            num:100
+        };
+    }
+
+- to update the state object of a class component we have a method "this.setState({})"
 
 
-
-
-
-
-
-
+functional component:- (stateless components are functional components)
+- by default functional component stateless because there is no state object.
+- in react v16.8 , they introduce a concept called as "Hooks".
+syntax :- const[state , setState] = useState(initialValue);
+                state - it will store intital value
+                setState - it is used to update the state.
 
 - (rafce) used to create functional component
 **********************************************
@@ -161,17 +173,21 @@ export default class App extends Component {
 
 -we get the above with the help of the rcc
 
+//how to apply styles 
 
 
-Props:-
-********
+Hooks:- Hooks is nothing but a functions which implement all the features of class component into functional component.
+
+basics hooks are:-
+1.useState()
+2.useEffect()
 
 
 
-state:-
-********
-- state is a mutable object which is userd to store/
-isolate the data inside the component 
 
-class component:-
-***************
+
+
+
+
+
+
